@@ -134,7 +134,7 @@ echo json_encode($data, JSON_PRETTY_PRINT);
 echo "\n<==== END PUT_Segment ====>\n";
 */
 
-
+/*
 //Create Payload to delete Segment
 $payload = [
     'payload' => [
@@ -144,18 +144,14 @@ $payload = [
     ]
 ];
 
-echo "\n<==== Begin Payload ====>\n";
-echo json_encode($payload, JSON_PRETTY_PRINT);
-echo "\n<==== END Payload ====>\n";
-
-//TODO: Test Delete_Segment 
-//ERROR: `405 Http method DELETE is not supported by this URL`
+//TODO: Delete Segments may not work currently with the Engage API. Under development
+//ERROR: `405 Http method DELETE is not supported by this URL` 
 // https://help.salsalabs.com/hc/en-us/articles/224531528-Engage-API-Segment-Data#deleting-segments
 echo "\n<==== Begin Delete_Segment ====>\n";
 $data = $IntAPI->Int_API("Delete_Segment", $payload);
 echo json_encode($data, JSON_PRETTY_PRINT);
 echo "\n<==== END Delete_Segment ====>\n";
-
+*/
 
 
 /*
