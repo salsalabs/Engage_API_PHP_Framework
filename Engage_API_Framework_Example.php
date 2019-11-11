@@ -144,8 +144,7 @@ $payload = [
     ]
 ];
 
-//TODO: Delete Segments may not work currently with the Engage API. Under development
-//ERROR: `405 Http method DELETE is not supported by this URL` 
+//Delete Segments may not work currently with the Engage API. Under development
 // https://help.salsalabs.com/hc/en-us/articles/224531528-Engage-API-Segment-Data#deleting-segments
 echo "\n<==== Begin Delete_Segment ====>\n";
 $data = $IntAPI->Int_API("Delete_Segment", $payload);
@@ -222,7 +221,7 @@ $payload = [
     'payload' => [
         'donations' => [
             ['type' => 'CHARGE', 'date' => '2019-04-17T00:00:00.0Z', 'amount' => '500.0', 'gatewayTransactionId' => "1915149068231", 'supporter' => [
-                'title' => 'Mr.', 'firstName' => 'Tres', 'lastName' => 'Robertoe', 'dateOfBirth' => '1985-05-06T04:00:00.000Z', 'gender' => 'MALE', 'contacts' => [
+                'title' => 'Mr.', 'firstName' => 'Salsa', 'lastName' => 'Staff', 'dateOfBirth' => '1985-05-06T04:00:00.000Z', 'gender' => 'MALE', 'contacts' => [
                         ['type' => 'EMAIL', 'value' => 'troberts+robertoe@salsalabs.com', 'status' => 'OPT_IN']
                     ] 
                 ]
@@ -423,7 +422,7 @@ $payload = [
     ]
 ];
 
-//TODO: Test Submissions
+//Test Submissions
 // https://help.salsalabs.com/hc/en-us/articles/360001220294-Submissions
 echo "\n<==== Begin Submissions ====>\n";
 $params = "";
